@@ -1,0 +1,62 @@
+
+
+
+
+  <div class="dashboard-container">
+
+    <div class="sidebar" style="width:15%;">
+      <div class="accordion" id="sidebarAccordion">
+
+          <div class="accordion-item p-3 dashboard-item" >
+            <a class="nav-link " routerLink="/dashboard/dashboard-pannel">
+              <i class="fas fa-fw fa-tachometer-alt"></i>
+              <span >Dashboard</span></a>
+          </div>
+
+        <div class="accordion-item">
+          <h2 id="serviceManagerHeading">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#serviceManagerCollapse" aria-expanded="true" aria-controls="serviceManagerCollapse">
+              Service Manager
+            </button>
+          </h2>
+          <div id="serviceManagerCollapse" class="accordion-collapse collapse show" aria-labelledby="serviceManagerHeading">
+            <div class="accordion-body">
+
+              <!-- Service Person Option -->
+              <div class="d-block m-2">
+              <a href="/dashboard/service-person" routerLink="service-person-page">Service Person</a>
+              </div>
+              <!-- Service Request Option -->
+              <div class="d-block m-2">
+              <a href="/dashboard/service-request" routerLink="service-request-page">Service Request</a>
+              </div>
+
+              <div class="d-block m-2">
+                <a href="/dashboard/" routerLink="add-asset-categories">Add Asset Categories</a>
+              </div>
+
+              <div class="d-block m-2">
+                <a href="/dashboard/" routerLink="show-asset-categories">Show Asset Categories</a>
+              </div>
+
+              <div class="d-block m-2">
+                <a href="/dashboard/" routerLink="add-service-category">Add service Categories</a>
+              </div>
+
+              <div class="d-block m-2">
+                <a href="/dashboard/" routerLink="show-service-category">Show service Categories</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content body" >
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+
